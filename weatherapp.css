@@ -1,0 +1,164 @@
+
+body {
+    
+    padding: 0px;
+    background-image: url("https://wallpaperaccess.com/full/924678.jpg");
+    background-size:contain;
+    
+    
+    
+    resize: both;
+
+    
+} 
+
+#container {
+    height: auto;
+    width: 99%;
+    
+    margin: auto;
+}
+
+#search {
+    display: flex;
+    margin: 0px 2%;font-size: 20px; 
+}
+
+#searchInp {
+    height: 50px;
+    width: 250px;
+    border: 1px solid rgb(55, 55, 3);
+    border-radius: 5px;
+    background-color:black;
+    color:antiquewhite;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#location{
+    height: 50px;
+    width: 200px;
+   border:none;
+    color:green;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size:large;
+    margin-right: 20%;
+}
+#location:hover{
+    background-color: rgb(61, 13, 206);
+    color:white;
+    border:2px solid silver;
+    font-weight: 600;
+}
+#data{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    font:bolder;
+    border: none;
+    background-color: rgb(53, 13, 231);
+    border-radius: 30px;
+}
+#result {
+    margin-top: 20px;
+    margin: auto;
+    height: auto;
+    width: 80%;
+    
+    
+    display: grid;
+    box-shadow: rgba(12, 230, 16, 0.051) 0px -23px 25px 0px inset, rgba(6, 227, 10, 0.062) 0px -36px 30px 0px inset, rgba(218, 8, 8, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(219, 3, 3, 0.09) 0px 32px 16px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: 10px;
+}
+
+#curWeather {
+    grid-area: 1/1/2/2;
+    padding: 30px 100px;
+    
+    
+    
+}
+
+#temp_p{
+    font-size: 28px;
+    font-weight: bolder;
+    color:springgreen;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#map {
+    grid-area: 1/2/2/3;
+    
+}
+
+#forecast {
+    grid-area: 2/1/3/3;
+    display: flex;
+   
+    margin-top: 0px;
+    gap: 10px;
+    
+    width: auto;
+    margin: auto;
+    height: 300px;
+}
+
+#main_div {
+    height: auto;
+    background-color: rgb(212, 224, 236);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    
+
+    
+}
+h5{
+    margin:auto;
+   
+    font-size: large;
+    color:rgb(4, 178, 184);
+    text-shadow: 2px 1px black;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    
+    margin: 20px  20px 20px auto ;
+    width:auto;
+    
+}
+.mapouter{
+    grid-area: 1/2/2/3;
+    
+    position:relative;
+    text-align:right;
+   
+    height:500px;
+    width:auto;
+}
+
+#day{
+    /* text-shadow: 2px 1px red; */
+    font-size: larger;
+    
+}
+
+#mybox{
+    width:1450px;
+    height:50px;
+    margin:30px;
+    border:2px solid rgb(12, 239, 107);
+    text-align:center;
+    background-color: cyan;
+    color: black;
+    position:relative;
+
+}
